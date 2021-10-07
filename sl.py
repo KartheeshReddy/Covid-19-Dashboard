@@ -25,9 +25,7 @@ row2=streamlit.beta_columns(4)
 for i in range(4):
     row2[i].markdown(f'<p style="color:{colors[i]};font-size:24px;">{int(total_dataframe[l[i]])}</p>', unsafe_allow_html=True)
 
-#visualisation=streamlit.sidebar.selectbox('Select a chart type',('Bar Graph','Pie Chart','Line Graph'))
-#select_state=streamlit.sidebar.selectbox('Select a state',main_dataframe['State'].unique())
-#select_status=streamlit.sidebar.radio('Covid-19 cases status',('Confirmed Cases','Recovered Cases','Deaths Cases','Active Cases'))
+
 streamlit.header("State-wise data")
 
 row3=streamlit.beta_columns(5)
